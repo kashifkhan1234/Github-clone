@@ -1,0 +1,124 @@
+@import url(https://fonts.google.com/specimen/Baloo+Bhai+2?query=ba);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    font-family: "oswald",sans-serif;
+    font-size: 62.5%;
+    
+}
+body{
+    font-size: 1.6rem;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+    justify-content:center ;
+    gap: 4rem;
+}
+
+.search{
+    display: flex;
+    width: 50%;
+}
+
+.search input{
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.search input:focus-visible{
+    outline: 1px solid purple;
+}
+
+.primary-btn{
+    background: purple;
+    color: white;
+    padding: 0.5rem 1rem ;
+    border: none;
+}
+
+.primary-btn:hover{
+     background: darkslateblue; 
+    font-size: 2rem;
+} 
+
+.primary-btn:active{
+    background: palevioletred;
+}
+
+/* For CARD */
+
+.profile-box{
+    /* display: flex;
+    flex-direction: column; */
+padding: 4rem 2rem;
+box-shadow:0 0 1rem rgb(25, 25, 25) ;
+}
+
+.avatar{
+    
+    /* float:  left 50%; */
+    height: 10rem;
+    width: 10rem; 
+}
+
+.avatar img{
+   
+    /* align-items: center;
+    justify-content: center; */
+height: 100%;
+width: 100%;
+border-radius: 50%;
+}
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.left h1{
+    font-size: 1.6rem;
+
+}
+
+.top-section button{
+    align-self:center ;
+}
+
+.about{
+    margin: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.status{
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+}
+.status-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.profile-box:hover{
+    transform: rotate(-1deg) scale(1.01);
+    transition: 0.5s ease-in;
+}
